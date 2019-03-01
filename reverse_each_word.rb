@@ -1,12 +1,7 @@
 def reverse_each_word(string)
-  reversed_string = ''
-  i = 0
-  while i < string.length
-    reversed_string = string[i] + reversed_string
-    i += 1
-  end
-  reversed_string
-end
+  reverse_string = []
+  string.each do |word|
+    reverse_string << word.reverse 
 
 
 
